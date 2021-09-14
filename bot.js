@@ -2,7 +2,6 @@
 const fs = require("fs");
 const path = require("path");
 const events = require("./events");
-const QueenAmdi = require('queenamdi-public-1');
 const chalk = require('chalk');
 const axios = require('axios');
 const config = require('./config');
