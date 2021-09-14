@@ -2,13 +2,13 @@
   "name": "t-rex",
   "version": "V1.0",
   "description": "❰🍁🔱  T Rex BOT  🔱🍁❱ Bot project - a Whatsapp userbot helping to improve your Whatsapp experience.",
-  "main": "./T-REX/bot.js",
+  "main": "./T-REX-1/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dark-Knight-Hiruwa/T-REX.git"
+    "url": "git+https://github.com/dkuir/8gh32jk565.git"
   },
   "keywords": [
     "whatsapp"
@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated/issues"
   },
-  "homepage": "https://github.com/Dark-Knight-Hiruwa/T-REX#readme",
+  "homepage": "https://github.com/dkuir/8gh32jk565#readme",
   "dependencies": {
     "@adiwajshing/baileys": "3.4.1",
     "@lh2020/speedtest-net": "^2.1.1",
