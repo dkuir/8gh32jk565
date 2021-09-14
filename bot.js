@@ -107,6 +107,15 @@ async function queenAmdi () {
             }
         })
     }, 50000);
+    
+    setInterval(async () => { 
+    if (config.AUTO_BIO == 'true') {
+        var tz_bio = await QueenAmdi.timezone(QueenAmdiCon.user.jid)
+        var date = await QueenAmdi.datebio(config.LANG)
+        const biography = '📅 ' + date + '\n⌚ ' + tz_bio + '    🎖️ '
+        await QueenAmdiCon.setStatus(biography)
+    }
+}, 7890);
 /*
 // --------------Queen Amdi verify system--------------
 if (/\[(\W*)\]/.test(config.HANDLERS)) {
