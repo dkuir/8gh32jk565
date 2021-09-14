@@ -5,6 +5,7 @@ const chalk = require('chalk');
 const axios = require('axios');
 const config = require('./config');
 const Heroku = require('heroku-client');
+const rex = require('trex');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
 const {Message, StringSession, Image, Video} = require('./queenamdi/');
 const { DataTypes } = require('sequelize');
@@ -110,10 +111,10 @@ async function queenAmdi () {
     
     setInterval(async () => { 
     if (config.AUTO_BIO == 'true') {
-        var tz_bio = await QueenAmdi.timezone(QueenAmdiCon.user.jid)
-        var date = await QueenAmdi.datebio(config.LANG)
+        var tz_bio = await rex.timezone(conn.user.jid)
+        var date = await rex.datebio(config.LANG)
         const biography = '📅 ' + date + '\n⌚ ' + tz_bio + '    🎖️ '
-        await QueenAmdiCon.setStatus(biography)
+        await conn.setStatus(biography)
     }
 }, 7890);
 /*
